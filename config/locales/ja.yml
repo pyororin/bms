@@ -1,0 +1,16 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ja:
+  helpers:
+    submit:
+      create: '作成'
+      update: '更新'
+
+
+    label:
+      book:
+        name: '名前'
+        yomi: 'ヨミガナ'
+        last: '所持最終巻'
+        desc: '備考'

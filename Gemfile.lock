@@ -107,4 +107,5 @@ DEPENDENCIES
   mysql2
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
+  therubyracer
   uglifier (>= 1.0.3)

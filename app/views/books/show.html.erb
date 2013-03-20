@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>名前:</b>
   <%= @book.name %>
 </p>
 
 <p>
-  <b>Yomi:</b>
+  <b>ヨミガナ:</b>
   <%= @book.yomi %>
 </p>
 
 <p>
-  <b>Last:</b>
+  <b>所持最終巻:</b>
   <%= @book.last %>
 </p>
 
 <p>
-  <b>Desc:</b>
+  <b>備考:</b>
   <%= @book.desc %>
 </p>
 
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to '編集', edit_book_path(@book) %> |
+<%= link_to '戻る', books_path %>

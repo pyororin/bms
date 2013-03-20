@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  yomi: MyString
+  last: 1
+  desc: MyString
+
+two:
+  name: MyString
+  yomi: MyString
+  last: 1
+  desc: MyString

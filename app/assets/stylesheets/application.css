@@ -13,6 +13,12 @@
  */
 
 #main {
-  width: 300px;
+  width: 100%;
   margin: 0 auto;
+}
+
+footer {
+	margin 5px
+	width: 100%;
+	text-align: right;
 }

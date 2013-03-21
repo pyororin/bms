@@ -20,6 +20,7 @@
   <%= @book.desc %>
 </p>
 
-
-<%= link_to '編集', edit_book_path(@book) %> |
-<%= link_to '戻る', books_path %>
+<div id="lower-operation">
+  <%= link_to '編集', edit_book_path(@book) %>
+  <%= link_to '戻る', books_path %>
+</div>

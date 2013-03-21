@@ -1,3 +1,4 @@
+<div id="form">
 <%= form_for(@book) do |f| %>
   <% if @book.errors.any? %>
     <div id="error_explanation">
@@ -31,3 +32,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>

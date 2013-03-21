@@ -1,16 +1,17 @@
 body {
   background-color: #ccc;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 18px;
+  font-size: 12px;
   margin: 0 auto;
-  width: 600px;
+  width: 320px;
 }
+
+body, textarea { font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif; }
+input, select { font-family: Arial, "ＭＳ Ｐゴシック", sans-serif; }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 18px;
 }
 
@@ -21,14 +22,27 @@ pre {
 }
 
 a {
-  color: #000;
-  &:visited {
-    color: #666;
-  }
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+     /* ▼枠線 */
+   border-style: solid;
+   border-width: 1px;
+   border-color: #ccc #999 #999 #ccc;
+   /* ▼角丸 */
+   -webkit-border-radius: 7px; /* Chrome,Safari */
+   -moz-border-radius: 7px;    /* Firefox */
+   border-radius: 7px;         /* CSS3 */
+   /* ▼余白 */
+   padding: 1px;
+   margin: 0 1px;
+   /* ▼文字装飾 */
+   text-decoration: none;
+   /* ▼背景 */
+   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc)); /* Chrome,Safari */
+   filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffffff,EndColorStr=#ffcccccc); zoom:1; /* IE */
+   background: -moz-linear-gradient(top, #fff, #ccc); /* Firefox */
+   background: -o-linear-gradient(top, #fff, #ccc);   /* Opera */
+   background: linear-gradient(top, #fff, #ccc);      /* CSS3 */
+   /* ▼空白・改行の扱い */
+   white-space: nowrap;
 }
 
 div {
@@ -71,21 +85,6 @@ div {
 }
 
 // ヘッダー部
-header {
-  margin: 0 auto;
-}
-
-header div.img-box {
-  width: 600px;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  layout-grid-line: 200px;
-}
-header div.img-box img {
-  vertical-align: middle;
-}
-
 h1 {
   height: 42px;
   line-height: 42px;
@@ -103,12 +102,3 @@ h1 {
   text-overflow: ellipsis;
   margin-top: 0px;
 }
-
-// テーブル部
-tr {
-  margin: 9px 9px 16px;
-  border: solid 1px #a9abae;
-  -webkit-border-radius: 8px;
-  background-color: #fff;
-}
-

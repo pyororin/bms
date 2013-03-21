@@ -3,13 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // テーブル
+th,td {
+  -webkit-border-radius: 4px;
+  background-color: #fff;
+}
+
 .name {
-  width: 150px;
+  width: 120px;
 }
 .book-number {
-  width: 80px;
+  width: 40px;
   text-align: center;
 }
 .desc {
-  width: 200px;
+  width: 70px;
+}
+
+.operation {
+  width: 60px;
 }

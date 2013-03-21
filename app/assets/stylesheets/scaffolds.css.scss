@@ -3,7 +3,7 @@ body {
   color: #333;
   font-size: 12px;
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
 }
 
 body, textarea { font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif; }
@@ -62,7 +62,7 @@ div {
 }
 
 #error_explanation {
-  width: 450px;
+  width: 250px;
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;

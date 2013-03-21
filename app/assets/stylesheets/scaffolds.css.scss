@@ -1,14 +1,16 @@
 body {
-  background-color: #fff;
+  background-color: #ccc;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 18px;
+  margin: 0 auto;
+  width: 600px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 18px;
 }
 
@@ -67,3 +69,46 @@ div {
     list-style: square;
   }
 }
+
+// ヘッダー部
+header {
+  margin: 0 auto;
+}
+
+header div.img-box {
+  width: 600px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  layout-grid-line: 200px;
+}
+header div.img-box img {
+  vertical-align: middle;
+}
+
+h1 {
+  height: 42px;
+  line-height: 42px;
+  border-top: 1px solid #cdd5df;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b0bccd), to(#6d84a2));
+  border-bottom: 1px solid #2d3642;
+  background-color: #b0bccd;
+  font-family: HiraKakuProN-W6;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.6) 0 -1px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0px;
+}
+
+// テーブル部
+tr {
+  margin: 9px 9px 16px;
+  border: solid 1px #a9abae;
+  -webkit-border-radius: 8px;
+  background-color: #fff;
+}
+

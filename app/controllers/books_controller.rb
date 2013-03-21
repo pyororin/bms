@@ -1,7 +1,9 @@
+# -*- encoding: utf-8 -*-
 class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
+    @page_title = '書籍一覧'
     @books = Book.all
 
     respond_to do |format|
@@ -24,6 +26,7 @@ class BooksController < ApplicationController
   # GET /books/new
   # GET /books/new.json
   def new
+    @page_title = '書籍情報作成'
     @book = Book.new
 
     respond_to do |format|
@@ -34,6 +37,7 @@ class BooksController < ApplicationController
 
   # GET /books/1/edit
   def edit
+    @page_title = '書籍編集'
     @book = Book.find(params[:id])
   end
 

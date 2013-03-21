@@ -1,24 +1,19 @@
-<h1>書籍一覧</h1>
-
 <table>
   <tr>
-    <th>名前</th>
-    <th>ヨミガナ</th>
-    <th>巻数</th>
-    <th>備考</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th class="name">名前</th>
+    <th class="book-number">巻数</th>
+    <th class="desc">備考</th>
+    <th class="operation"></th>
   </tr>
 
 <% @books.each do |book| %>
   <tr>
-    <td><%= book.name %></td>
-    <td><%= book.yomi %></td>
-    <td>1～<%= book.last %></td>
-    <td><%= book.desc %></td>
-    <td><%= link_to '編集', edit_book_path(book) %></td>
-    <td><%= link_to '削除', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td class="name"><span title=<%= book.yomi %>><%= book.name %></span></td>
+    <td class="book-number">1～<%= book.last %></td>
+    <td class="desc"><%= book.desc %></td>
+    <td class="operation"><span><%= link_to '編集', edit_book_path(book) %></span>
+    	<span><%= link_to '削除', book, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+    </td>
   </tr>
 <% end %>
 </table>

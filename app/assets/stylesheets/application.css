@@ -18,7 +18,13 @@
 }
 
 footer {
-	margin: 5px;
+	padding: 5px auto;
 	width: 100%;
 	text-align: right;
 }
+footer span {
+	font-size: smaller;
+	font-style: italic;
+	margin: 0 5px;
+}
+

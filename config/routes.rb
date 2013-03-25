@@ -1,6 +1,18 @@
 Bms::Application.routes.draw do
-  resources :books
+  get "sessions/new"
 
+  get "users/index"
+
+  resources :books
+  
+  devise_for :users, :controllers => {:sessions =>"sessions"}
+  resources :users
+  
+  root :to => "books#index"
+  
+  match 'session/user' => 'sessions#user'
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

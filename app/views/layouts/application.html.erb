@@ -9,10 +9,20 @@
 </head>
 <body>
   <h1><%= @page_title %></h1>
+  <div>
+  	<% if !notice.nil? %>
+    	<div class="success"><%= notice %></div>
+    <% end %>
+    <% if !alert.nil? %>
+    	<div class="error"><%= alert %></div>
+    <% end %>
+  </div>
   <div id="main">
 	<%= yield %>
   </div>
   <footer>
+  	<span class="user-controll"><%= link_to t('helpers.label.user.sign_out'), destroy_user_session_path, :method => :delete %></span>
+  	<span class="user-controll"><%= link_to t('helpers.label.user.management') %></span>
   	<span id="version"><%= Bms::Version::STRING %></span>
   </footer>
 </body>

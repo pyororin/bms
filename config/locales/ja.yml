@@ -6,6 +6,7 @@ ja:
     submit:
       create: '作成'
       update: '更新'
+      Sign in: 'ログイン'
 
 
     label:
@@ -14,3 +15,12 @@ ja:
         yomi: 'ヨミガナ'
         last: '所持最終巻'
         desc: '備考'
+      
+      user:
+        email: 'メールアドレス'
+        password: 'パスワード'
+        remember_me: 'ログイン情報を保存'
+        sign_in: 'ログイン'
+        sign_up: 'ユーザ登録'
+        sign_out: 'ログアウト'
+        management: 'ユーザ管理画面'

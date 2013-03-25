@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
 class BooksController < ApplicationController
+  
   # GET /books
   # GET /books.json
   def index
     @page_title = '書籍一覧'
-    @books = Book.all
+    @books = Book.where(:user_id => current_user.id).order('complete asc', 'yomi')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,10 +46,12 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.new(params[:book])
+      p current_user.id
+    @book.user_id = current_user._id
 
     respond_to do |format|
       if @book.save
-        format.html { redirect_to @book, notice: 'Book was successfully created.' }
+        format.html { redirect_to books_url }
         format.json { render json: @book, status: :created, location: @book }
       else
         format.html { render action: "new" }
@@ -64,7 +67,7 @@ class BooksController < ApplicationController
 
     respond_to do |format|
       if @book.update_attributes(params[:book])
-        format.html { redirect_to @book, notice: 'Book was successfully updated.' }
+        format.html { redirect_to books_url }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

@@ -10,6 +10,10 @@ class BooksController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @books }
+      format.csv  {
+        send_data Book.export(@books), type: 'text/csv; charset=shift_jis',
+        filename: "books_#{Time.now.strftime('%Y_%m_%d_%H_%M_%S')}.csv"
+      }
     end
   end
 

@@ -14,7 +14,7 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :autofocus => true %>
   </div>
   <div class="field">
     <%= f.label :yomi %><br />
@@ -22,7 +22,7 @@
   </div>
   <div class="field">
     <%= f.label :last %><br />
-    <%= f.number_field :last %>
+    <%= f.number_field :last, :style => 'ime-mode:disabled;' %>
   </div>
   <div class="field">
     <%= f.label :desc %><br />

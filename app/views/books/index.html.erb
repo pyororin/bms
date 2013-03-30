@@ -9,7 +9,7 @@
 <% @books.each do |book| %>
   <tr>
     <td class="name"><span title=<%= book.yomi %>><%= complete_flg book %><%= book.name %></span></td>
-    <td class="book-number">1～<%= book.last %></td>
+    <td class="book-number"><%= disp_number book %></td>
     <td class="desc"><%= book.desc %></td>
     <td class="operation"><span><%= link_to '編集', edit_book_path(book) %></span>
     	<span><%= link_to '削除', book, method: :delete, data: { confirm: 'Are you sure?' } %></span>
@@ -19,4 +19,5 @@
 </table>
 <div id="lower-operation">
   <%= link_to '書籍追加', new_book_path %>
+  <%= link_to 'CSVダウンロード', books_path(format: "csv") %>
 </div>

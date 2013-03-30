@@ -40,3 +40,4 @@ production:
   username: rails
   password: ***MASKED***
   host: localhost
+  

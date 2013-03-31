@@ -1,8 +1,6 @@
 Bms::Application.routes.draw do
   get "sessions/new"
 
-  get "users/index"
-
   resources :books
   
   devise_for :users, :controllers => {:sessions =>"sessions"}

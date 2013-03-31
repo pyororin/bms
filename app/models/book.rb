@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 class Book < ActiveRecord::Base
+  belongs_to :user
   attr_accessible :desc, :last, :name, :yomi, :complete
   validates :name, :presence => {:message => 'は必須です。'}, :uniqueness => {:message => 'は既に登録されています。'}
   validates :yomi, :presence => {:message => 'は必須です。'}, :uniqueness => {:message => 'は既に登録されています。'},

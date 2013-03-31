@@ -10,6 +10,8 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   attr_accessor :login
   
+  has_many :books
+  
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
     if login = conditions.delete(:login)

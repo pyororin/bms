@@ -1,6 +1,7 @@
 Bms::Application.routes.draw do
   get "sessions/new"
 
+  match 'books/plus' => 'books#plus'
   resources :books
   
   devise_for :users, :controllers => {:sessions =>"sessions"}

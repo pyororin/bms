@@ -16,4 +16,8 @@ class Book < ActiveRecord::Base
       end
     end.encode(Encoding::SJIS)
   end
+  
+  def plus
+    self.last += 1
+  end
 end

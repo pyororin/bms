@@ -1,0 +1,13 @@
+---
+logo.gif: logo-c367f7c596044c3815fdef18a6cb5c84.gif
+logo/index.gif: logo-c367f7c596044c3815fdef18a6cb5c84.gif
+logo.png: logo-1ef2adf57a445ed142775ed383d43268.png
+logo/index.png: logo-1ef2adf57a445ed142775ed383d43268.png
+rails.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
+rails/index.png: rails-a3386665c05a2d82f711a4aaa72d247c.png
+application.js: application-e9b926696565f757fb18e5ff01cce621.js
+application/index.js: application-e9b926696565f757fb18e5ff01cce621.js
+application.css: application-51f755c964945c843ed2ecb707574aba.css
+application/index.css: application-51f755c964945c843ed2ecb707574aba.css
+jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
+jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map

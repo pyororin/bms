@@ -16,6 +16,13 @@ class BooksController < ApplicationController
       }
     end
   end
+  
+  def plus
+    @book = Book.find(params[:id])
+    @book.plus
+    @book.update_attributes(params[:book])
+    redirect_to :action => "index"
+  end
 
   # GET /books/1
   # GET /books/1.json
